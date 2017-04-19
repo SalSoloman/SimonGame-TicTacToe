@@ -3,16 +3,39 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Simon Game</title>
+    <!-- <title>Simon Game</title> -->
     <link rel='stylesheet' type='text/css' href='/stylesheets/style.css'>
   </head>
 
   <body>
-    <h1> Simon Game </h1>
     <div>
-      <div class='circle'></div>
-      <div class='circle2'></div>
+      <h1 id="title" class="Center">Simon Game</h1>
     </div>
+    <div class="main Center">
+        <div>
+        <div id="btn1" class="quarter quarter1"></div>
+        <div id="btn2" class="quarter quarter2"></div>
+        <div id="btn3" class="quarter quarter3"></div>
+        <div id="btn4" class="quarter quarter4"></div>
+        </div>
+        <div class="cutout">
+          <div id="SegDisplay" class="Center"></div>
+          <div class="toggle toggle--neon">
+    			  <input type="checkbox" id="chkGameMode" class="toggle--checkbox">
+    			  <label class="toggle--btn" for="chkGameMode" data-label-on="strict"  data-label-off="normal"></label>
+    		  </div>
+          <div>
+            <button id="butnReset" type="button" class="btn btn-default btn-circle">Reset</button>
+          </div>
+        </div>
+    </div>
+    <div class="Center">
+      <div id="divUserMsg" class="alert alert-info fade out" data-alert="alert"></div>
+    </div>
+    <audio id="audio1"><source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source></audio>
+    <audio id="audio2"><source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source></audio>
+    <audio id="audio3"><source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source></audio>
+    <audio id="audio4"><source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source></audio>
   </body>
 
 </html>
