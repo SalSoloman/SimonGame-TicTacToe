@@ -1,4 +1,4 @@
-svar SimonSteps = [];
+var SimonSteps = [];
 var UserSteps = [];
 var CurrentStep = 0;
 var CurrentUserStep = 0;
